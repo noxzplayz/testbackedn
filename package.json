@@ -4,9 +4,11 @@
   "description": "A professional chat website that allows users to send and receive messages across devices.",
   "main": "src/server/index.js",
   "scripts": {
-    "start": "node src/server/index.js",
+    "start": "node dist/server/index.js",
     "dev": "nodemon src/server/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "server": "ts-node src/server/index.ts",
+    "client": "react-scripts start"
   },
   "dependencies": {
     "express": "^4.17.1",
